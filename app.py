@@ -12,7 +12,6 @@ app = Flask(__name__)
 API_KEY = "a5765ebb593f55db1f0d896faff51969"
 
 def log_action(user_id, action, details=""):
-    """Логирование действий пользователя"""
     os.makedirs("logs", exist_ok=True)
     log_file = f"logs/{user_id}.log"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -21,7 +20,6 @@ def log_action(user_id, action, details=""):
 
 @app.route('/')
 def index():
-    """Главная страница"""
     user_id = request.cookies.get('user_id')
     if not user_id:
         user_id = str(uuid.uuid4())[:8]
@@ -32,7 +30,6 @@ def index():
 
 @app.route('/api/weather/current')
 def current_weather():
-    """API: Текущая погода"""
     city = request.args.get('city', '').strip()
     user_id = request.args.get('user_id', 'unknown')
     
@@ -65,7 +62,6 @@ def current_weather():
 
 @app.route('/api/weather/forecast')
 def forecast_weather():
-    """API: Прогноз на 5 дней"""
     city = request.args.get('city', '').strip()
     user_id = request.args.get('user_id', 'unknown')
     
@@ -109,7 +105,6 @@ def forecast_weather():
 
 @app.route('/api/quote')
 def get_quote():
-    """API: Цитата о погоде (скрапинг + бэкап)"""
     user_id = request.args.get('user_id', 'unknown')
     
     quotes_backup = [
@@ -151,7 +146,6 @@ def get_quote():
 
 @app.route('/api/logs')
 def get_logs():
-    """API: Получить логи пользователя"""
     user_id = request.args.get('user_id', 'unknown')
     log_file = f"logs/{user_id}.log"
     
