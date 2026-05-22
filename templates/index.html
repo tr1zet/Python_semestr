@@ -14,10 +14,11 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #f0f4f8;
+            background: linear-gradient(135deg, #e0f0ff 0%, #f5f9ff 100%);
             color: #1a2c3e;
             line-height: 1.5;
             padding: 32px 24px;
+            min-height: 100vh;
         }
 
         .container {
@@ -25,7 +26,7 @@
             margin: 0 auto;
         }
 
-        /* Header  */
+        /* Header */
         .header {
             display: flex;
             justify-content: space-between;
@@ -42,42 +43,51 @@
         }
 
         .logo-icon {
-            font-size: 36px;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+            font-size: 42px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
         }
 
         .logo-text {
             font-size: 28px;
-            font-weight: 600;
+            font-weight: 700;
             background: linear-gradient(135deg, #2c5f8a 0%, #4a90c4 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            letter-spacing: -0.3px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-sub {
+            font-size: 12px;
+            color: #7c8ba0;
+            margin-left: 4px;
         }
 
         .user-id {
-            background: rgba(44, 95, 138, 0.1);
-            padding: 8px 18px;
+            background: rgba(44, 95, 138, 0.12);
+            padding: 8px 20px;
             border-radius: 40px;
             font-size: 13px;
             font-weight: 500;
             color: #2c5f8a;
             backdrop-filter: blur(4px);
+            font-family: monospace;
         }
 
         /* Поисковая карточка */
         .search-card {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             border-radius: 32px;
             padding: 32px 36px;
             margin-bottom: 40px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
             transition: box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.5);
         }
 
         .search-card:hover {
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
         }
 
         .search-title {
@@ -85,7 +95,6 @@
             font-weight: 500;
             color: #1a2c3e;
             margin-bottom: 24px;
-            letter-spacing: -0.2px;
         }
 
         .search-box {
@@ -98,23 +107,18 @@
         .search-input {
             flex: 1;
             padding: 16px 24px;
-            border: 1.5px solid #e2e8f0;
+            border: 2px solid #e2e8f0;
             border-radius: 60px;
             font-size: 16px;
-            font-weight: 400;
             transition: all 0.2s ease;
-            background: #ffffff;
+            background: white;
             font-family: inherit;
         }
 
         .search-input:focus {
             outline: none;
             border-color: #4a90c4;
-            box-shadow: 0 0 0 3px rgba(74, 144, 196, 0.1);
-        }
-
-        .search-input::placeholder {
-            color: #94a3b8;
+            box-shadow: 0 0 0 3px rgba(74, 144, 196, 0.15);
         }
 
         .search-btn {
@@ -124,15 +128,15 @@
             border: none;
             border-radius: 60px;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
             font-family: inherit;
         }
 
         .search-btn:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(44, 95, 138, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 95, 138, 0.35);
         }
 
         .quick-cities {
@@ -164,7 +168,7 @@
         .city-chip:hover {
             background: #4a90c4;
             color: white;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
         }
 
         /* Сетка карточек */
@@ -178,15 +182,15 @@
             background: white;
             border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
         }
 
         .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
         }
 
         .card-header {
@@ -211,17 +215,17 @@
         .card-content {
             padding: 24px 28px;
             flex: 1;
-            min-height: 240px;
+            min-height: 250px;
         }
 
-        /* Погода  */
+        /* Текущая погода */
         .weather-main {
             text-align: center;
         }
 
         .weather-temp {
-            font-size: 64px;
-            font-weight: 600;
+            font-size: 68px;
+            font-weight: 700;
             color: #1e3a5f;
             line-height: 1.2;
             margin-bottom: 8px;
@@ -259,7 +263,7 @@
 
         .detail-label {
             display: block;
-            font-size: 13px;
+            font-size: 12px;
             color: #7c8ba0;
             margin-bottom: 6px;
         }
@@ -270,7 +274,7 @@
             color: #2c5f8a;
         }
 
-        /* Прогноз  */
+        /* Прогноз */
         .forecast-location {
             text-align: center;
             font-size: 14px;
@@ -319,24 +323,23 @@
             text-align: right;
         }
 
-        /* Цитата  */
+        /* Цитата */
         .quote-text {
             font-size: 18px;
-            line-height: 1.5;
-            font-style: normal;
+            line-height: 1.55;
             color: #334155;
             font-weight: 450;
             position: relative;
-            padding: 0 8px;
+            padding: 0 12px;
         }
 
         .quote-text::before {
             content: "“";
-            font-size: 48px;
+            font-size: 56px;
             color: #cbd5e1;
             position: absolute;
-            left: -12px;
-            top: -20px;
+            left: -8px;
+            top: -28px;
             font-family: serif;
         }
 
@@ -346,16 +349,17 @@
             color: #94a3b8;
             font-size: 14px;
             font-weight: 500;
+            font-style: italic;
         }
 
         .quote-source {
             margin-top: 16px;
             text-align: center;
-            font-size: 11px;
+            font-size: 10px;
             color: #cbd5e1;
         }
 
-        /* Логи - чисто и читаемо */
+        /* Логи */
         .logs-list {
             display: flex;
             flex-direction: column;
@@ -383,13 +387,13 @@
             padding: 10px 14px;
             background: #f8fafc;
             border-radius: 16px;
-            font-size: 12px;
+            font-size: 11px;
             font-family: 'Inter', monospace;
             color: #475569;
             border-left: 3px solid #4a90c4;
         }
 
-        /* Кнопки в карточках */
+        /* Кнопки */
         .card-btn {
             margin: 0 24px 24px 24px;
             padding: 14px;
@@ -406,20 +410,20 @@
 
         .card-btn:hover {
             background: #e2e8f0;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
         }
 
-        /* Плейсхолдеры */
+        /* Статусы */
         .placeholder {
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
             color: #94a3b8;
             font-size: 14px;
         }
 
         .loading {
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
             color: #4a90c4;
             font-size: 14px;
             font-weight: 500;
@@ -427,7 +431,7 @@
 
         .error {
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
             color: #e26d5c;
             font-size: 14px;
         }
@@ -436,10 +440,10 @@
         .footer {
             margin-top: 48px;
             text-align: center;
-            padding: 24px;
+            padding: 28px;
             color: #94a3b8;
-            font-size: 12px;
-            border-top: 1px solid #e2e8f0;
+            font-size: 13px;
+            border-top: 1px solid rgba(0,0,0,0.05);
         }
 
         /* Адаптив */
@@ -471,7 +475,7 @@
             }
             
             .weather-temp {
-                font-size: 48px;
+                font-size: 52px;
             }
         }
     </style>
@@ -481,13 +485,17 @@
         <header class="header">
             <div class="logo">
                 <span class="logo-icon">🌤️</span>
-                <span class="logo-text">Aura Weather</span>
+                <div>
+                    <span class="logo-text">Aura Weather</span>
+                    <span class="logo-sub">мягкий прогноз</span>
+                </div>
             </div>
-            <div class="user-id">
+            <div class="user-id" id="userIdDisplay">
                 🆔 {{ user_id }}
             </div>
         </header>
 
+        <!-- Поисковая карточка -->
         <div class="search-card">
             <h2 class="search-title">🌍 Узнайте погоду в любом городе</h2>
             <div class="search-box">
@@ -506,6 +514,7 @@
             </div>
         </div>
 
+        <!-- Сетка карточек -->
         <div class="features-grid">
             <!-- Текущая погода -->
             <div class="feature-card">
@@ -568,8 +577,18 @@
     </div>
 
     <script>
-        const userId = '{{ user_id }}';
+        // Получаем user_id из HTML
+        const userIdElement = document.getElementById('userIdDisplay');
+        let userId = '';
+        if (userIdElement) {
+            const text = userIdElement.innerText;
+            const match = text.match(/🆔 (.+)/);
+            if (match) {
+                userId = match[1];
+            }
+        }
 
+        // Функция для получения текущей погоды
         async function getCurrentWeather(city) {
             const div = document.getElementById('currentContent');
             div.innerHTML = '<div class="loading">⏳ Загрузка данных...</div>';
@@ -606,6 +625,7 @@
             }
         }
 
+        // Функция для получения прогноза
         async function getForecast(city) {
             const div = document.getElementById('forecastContent');
             div.innerHTML = '<div class="loading">⏳ Загрузка прогноза...</div>';
@@ -634,6 +654,7 @@
             }
         }
 
+        // Функция для получения цитаты
         async function getQuote() {
             const div = document.getElementById('quoteContent');
             div.innerHTML = '<div class="loading">⏳ Поиск вдохновения...</div>';
@@ -641,24 +662,36 @@
                 const res = await fetch(`/api/quote?user_id=${userId}`);
                 const data = await res.json();
                 if (data.success) {
+                    let sourceHtml = '';
+                    if (data.source === 'scraping') {
+                        sourceHtml = '<div class="quote-source">📡 Источник: скрапинг aphorism.ru</div>';
+                    } else if (data.source === 'backup') {
+                        sourceHtml = '<div class="quote-source">💾 Из коллекции мудростей</div>';
+                    } else {
+                        sourceHtml = '<div class="quote-source">🌐 Источник: ' + (data.source || 'API') + '</div>';
+                    }
+                    
                     div.innerHTML = `
                         <div class="quote-text">${data.text}</div>
                         <div class="quote-author">— ${data.author}</div>
-                        ${data.scraped ? '<div class="quote-source">📡 Источник: aphorism.ru</div>' : '<div class="quote-source">💾 Из коллекции мудростей</div>'}
+                        ${sourceHtml}
                     `;
+                } else {
+                    div.innerHTML = '<div class="error">❌ Не удалось загрузить цитату</div>';
                 }
             } catch(e) {
-                div.innerHTML = '<div class="error">⚠️ Не удалось загрузить цитату</div>';
+                div.innerHTML = '<div class="error">⚠️ Ошибка загрузки цитаты</div>';
             }
         }
 
+        // Функция для получения логов
         async function getLogs() {
             const div = document.getElementById('logsContent');
             div.innerHTML = '<div class="loading">⏳ Загрузка истории...</div>';
             try {
                 const res = await fetch(`/api/logs?user_id=${userId}`);
                 const data = await res.json();
-                if (data.success && data.logs.length > 0 && data.logs[0] !== "Нет записей в логе") {
+                if (data.success && data.logs && data.logs.length > 0 && data.logs[0] !== "Нет записей в логе") {
                     let html = '<div class="logs-list">';
                     data.logs.forEach(log => {
                         html += `<div class="log-item">📝 ${log}</div>`;
@@ -687,6 +720,7 @@
         document.getElementById('quoteBtn').onclick = getQuote;
         document.getElementById('logsBtn').onclick = getLogs;
 
+        // Быстрые города
         document.querySelectorAll('.city-chip').forEach(btn => {
             btn.onclick = () => {
                 const city = btn.dataset.city;
@@ -696,11 +730,16 @@
             };
         });
 
+        // Enter в поле ввода
         document.getElementById('cityInput').onkeypress = (e) => {
             if (e.key === 'Enter') {
                 document.getElementById('searchBtn').click();
             }
         };
+
+
+        console.log('Aura Weather готов к работе!');
+        console.log('User ID:', userId);
     </script>
 </body>
 </html>

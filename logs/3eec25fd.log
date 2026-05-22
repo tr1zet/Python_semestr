@@ -50,3 +50,71 @@
 [2026-05-21 12:20:14] scraping_quote: Использована локальная база цитат
 [2026-05-21 12:20:20] current_weather: Город: Tokyo
 [2026-05-21 12:20:21] forecast_5days: Город: Tokyo
+[2026-05-22 12:24:07] forecast_5days: Город: Kemerovo
+[2026-05-22 12:24:07] current_weather: Город: Kemerovo
+[2026-05-22 12:24:12] quote_api_error: Quotable.io: HTTPSConnectionPool(host='api.quotable.io', port=443): Max retries exceeded with url: /random (Caused by NameResolutionError("HTTPSConnection(host='api.quotable.io', port=443): Failed to resolve 'api.quotable.io' ([Errno 11002] getaddrinfo failed)"))
+[2026-05-22 12:24:17] quote_api: Источник: ZenQuotes, тематическая: False
+[2026-05-22 12:24:19] quote_cache: Цитата из кэша
+[2026-05-22 12:24:20] quote_cache: Цитата из кэша
+[2026-05-22 12:24:21] quote_cache: Цитата из кэша
+[2026-05-22 12:24:22] quote_cache: Цитата из кэша
+[2026-05-22 12:24:23] quote_cache: Цитата из кэша
+[2026-05-22 12:24:28] quote_cache: Цитата из кэша
+[2026-05-22 12:24:29] quote_cache: Цитата из кэша
+[2026-05-22 12:24:29] quote_cache: Цитата из кэша
+[2026-05-22 12:24:30] quote_cache: Цитата из кэша
+[2026-05-22 12:24:30] quote_cache: Цитата из кэша
+[2026-05-22 12:24:30] quote_cache: Цитата из кэша
+[2026-05-22 12:24:30] quote_cache: Цитата из кэша
+[2026-05-22 12:24:30] quote_cache: Цитата из кэша
+[2026-05-22 12:24:31] quote_cache: Цитата из кэша
+[2026-05-22 12:24:31] quote_cache: Цитата из кэша
+[2026-05-22 12:24:31] quote_cache: Цитата из кэша
+[2026-05-22 12:24:31] quote_cache: Цитата из кэша
+[2026-05-22 12:24:31] quote_cache: Цитата из кэша
+[2026-05-22 12:24:55] current_weather: Город: Kemerovo
+[2026-05-22 12:24:55] forecast_5days: Город: Kemerovo
+[2026-05-22 12:24:58] scraping_quote: Использована локальная база цитат
+[2026-05-22 12:25:16] current_weather: Город: Дубай
+[2026-05-22 12:25:16] forecast_5days: Город: Дубай
+[2026-05-22 12:25:24] current_weather: Город: dubai
+[2026-05-22 12:25:25] forecast_5days: Город: dubai
+[2026-05-22 13:56:43] scraping_quote: Использована локальная база цитат
+[2026-05-22 14:00:21] current_weather: Город: Saint Petersburg
+[2026-05-22 14:00:22] forecast_5days: Город: Saint Petersburg
+[2026-05-22 14:00:27] current_weather: Город: Kemerovo
+[2026-05-22 14:00:27] forecast_5days: Город: Kemerovo
+[2026-05-22 14:12:51] current_weather: Город: Moscow
+[2026-05-22 14:12:51] forecast_5days: Город: Moscow
+[2026-05-22 14:12:56] current_weather: Город: Saint Petersburg
+[2026-05-22 14:12:59] current_weather: Город: Kemerovo
+[2026-05-22 14:13:06] forecast_error: Город: Saint Petersburg, Ошибка: Ошибка: HTTPConnectionPool(host='ru.api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+[2026-05-22 14:13:06] get_quote: Источник: backup
+[2026-05-22 14:13:09] forecast_error: Город: Kemerovo, Ошибка: Ошибка: HTTPConnectionPool(host='ru.api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+[2026-05-22 14:13:09] get_quote: Источник: backup
+[2026-05-22 14:13:10] get_quote: Источник: backup
+[2026-05-22 14:13:11] get_quote: Источник: backup
+[2026-05-22 14:13:12] view_logs: Просмотр истории (50 записей)
+[2026-05-22 14:13:15] current_weather: Город: Kemerovo
+[2026-05-22 14:13:22] current_weather: Город: Moscow
+[2026-05-22 14:13:23] current_weather: Город: Kemerovo
+[2026-05-22 14:13:25] current_weather: Город: Kemerovo
+[2026-05-22 14:13:25] forecast_error: Город: Kemerovo, Ошибка: Ошибка: HTTPConnectionPool(host='ru.api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+[2026-05-22 14:13:26] forecast_5days: Город: Kemerovo
+[2026-05-22 14:13:31] forecast_error: Город: Moscow, Ошибка: Ошибка: HTTPConnectionPool(host='ru.api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+[2026-05-22 14:13:35] current_weather: Город: Kemerovo
+[2026-05-22 14:13:36] forecast_error: Город: Kemerovo, Ошибка: Ошибка: HTTPConnectionPool(host='ru.api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+[2026-05-22 14:13:46] forecast_error: Город: Kemerovo, Ошибка: Ошибка: HTTPConnectionPool(host='ru.api.openweathermap.org', port=80): Read timed out. (read timeout=10)
+[2026-05-22 14:15:20] get_quote: Источник: backup
+[2026-05-22 14:15:28] current_weather: Город: Moscow
+[2026-05-22 14:15:29] current_weather: Город: Kemerovo
+[2026-05-22 14:15:29] forecast_5days: Город: Kemerovo
+[2026-05-22 14:15:32] forecast_5days: Город: Moscow
+[2026-05-22 14:20:21] current_weather: Город: Tokyo
+[2026-05-22 14:20:35] current_weather: Город: Kemerovo
+[2026-05-22 14:20:35] forecast_5days: Город: Kemerovo
+[2026-05-22 14:20:40] forecast_5days: Город: Tokyo
+[2026-05-22 14:20:47] current_weather: Город: Kemerovo
+[2026-05-22 14:20:47] forecast_5days: Город: Kemerovo
+[2026-05-22 14:20:48] get_quote: Источник: backup
+[2026-05-22 14:20:51] view_logs: Просмотр истории (50 записей)
